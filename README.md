@@ -14,37 +14,37 @@ This project was completed as part of a blockchain learning assignment.
 
 ---
 
-## 🚀 Features Implemented
+## Features Implemented
 
-### ✔️ Token Metadata
+### Token Metadata
 - **Name:** MyToken  
 - **Symbol:** MTK  
 - **Decimals:** 18  
 - **Total Supply:** 1,000,000 MTK  
 
-### ✔️ Core ERC-20 Functionalities
+### Core ERC-20 Functionalities
 - `balanceOf(address)` – Returns balance of an address  
 - `transfer(address to, uint256 value)` – Transfers tokens  
 - `approve(address spender, uint256 value)` – Approve spender  
 - `transferFrom(address from, address to, uint256 value)` – Transfer using allowance  
 - `allowance(address owner, address spender)` – Returns approved spending amount  
 
-### ✔️ Event Emission
+### Event Emission
 - `Transfer` event  
 - `Approval` event  
 
-### ✔️ Validation & Security Checks
+### Validation & Security Checks
 - Prevent transfers to zero address  
 - Prevent transfers more than sender balance  
 - Prevent spending without approved allowance  
 
-### ✔️ Helper Functions
+### Helper Functions
 - `getTotalSupply()`  
 - `getTokenInfo()`  
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## Tools & Technologies Used
 - **Solidity 0.8.x**
 - **Remix Ethereum IDE**
 - **Remix VM (JavaScript VM / Cancun VM)**
@@ -52,14 +52,14 @@ This project was completed as part of a blockchain learning assignment.
 
 ---
 
-## 📦 Total Supply Calculation
+## Total Supply Calculation
 Since ERC-20 tokens use decimals, the total supply is: 1,000,000 MTK × 10^18 = 1000000000000000000000000 units
 
 This value is passed as constructor input during deployment.
 
 ---
 
-## 📥 Deployment Steps (Clear & Simple)
+## Deployment Steps (Clear & Simple)
 
 ### 1️⃣ Open Remix IDE
 Go to: https://remix.ethereum.org/
@@ -90,18 +90,18 @@ Go to: https://remix.ethereum.org/
 
 ---
 
-## 🧪 Test Cases & Results
+## Test Cases & Results
 
-### ✔️ Transfer Test
+### Transfer Test
 - A → B  
 - Balances updated  
 - `Transfer` event emitted  
 
-### ✔️ Approve Test
+### Approve Test
 - A approves B  
 - `Approval` event emitted  
 
-### ✔️ transferFrom Test
+### transferFrom Test
 - B transfers A’s tokens to C  
 - Allowance reduced  
 - `Transfer` event emitted  
@@ -130,10 +130,6 @@ All screenshots necessary for submission are included in the **/Screenshots** fo
 - Approve success  
 - transferFrom success  
 - Event logs (Transfer/Approval)  
-- Zero address transfer failure  
-- Insufficient balance failure  
-- Insufficient allowance failure  
-
 ---
 
 ## 📚 Learning Outcomes
