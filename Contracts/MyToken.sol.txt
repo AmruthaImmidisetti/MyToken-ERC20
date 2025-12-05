@@ -6,9 +6,9 @@ pragma solidity ^0.8.0;
  * @dev Simple ERC-20 compatible token for learning purposes
  */
 contract MyToken {
-    // ----------------------------
+    // ---------------------------
     // 1. Token metadata
-    // ----------------------------
+    // ---------------------------
     string public name = "MyToken";    // Token name
     string public symbol = "MTK";      // Token symbol
     uint8 public decimals = 18;        // Standard ERC-20 decimals
@@ -171,3 +171,4 @@ contract MyToken {
         return (name, symbol, decimals, totalSupply);
     }
 }
+
